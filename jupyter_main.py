@@ -31,10 +31,10 @@ import sys
 ## 각자의 드롭박스 key 입력
 #FORUS_AI_RESOURCES_APP_ACCESS_TOKEN =  ''
 
-#logging.basicConfig(format='%(asctime)s,%(msecs)d %(levelname)-8s [%(filename)s:%(lineno)d] %(message)s',
+logging.basicConfig(format='%(asctime)s,%(msecs)d %(levelname)-8s [%(filename)s:%(lineno)d] %(message)s',
                     #datefmt='%Y-%m-%d:%H:%M:%S',
                     #level=logging.WARNING)
-#logger = logging.getLogger(__name__)
+logger = logging.getLogger(__name__)
 #dbx = dropbox.Dropbox(FORUS_AI_RESOURCES_APP_ACCESS_TOKEN)
 
 def auto_enter(text):
