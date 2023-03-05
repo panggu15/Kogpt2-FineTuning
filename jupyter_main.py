@@ -22,20 +22,20 @@ from oauth2client.client import GoogleCredentials
 import os
 import sys
 
-#드롭 박스를 이용하기 위해서 쓰는 코드 드롭박스 2T를 쓰기 위해서 선언
-auth.authenticate_user()
-gauth = GoogleAuth()
-gauth.credentials = GoogleCredentials.get_application_default()
-my_drive = GoogleDrive(gauth)
+##드롭 박스를 이용하기 위해서 쓰는 코드 드롭박스 2T를 쓰기 위해서 선언
+#auth.authenticate_user()
+#gauth = GoogleAuth()
+#gauth.credentials = GoogleCredentials.get_application_default()
+#my_drive = GoogleDrive(gauth)
 
-# 각자의 드롭박스 key 입력
-FORUS_AI_RESOURCES_APP_ACCESS_TOKEN =  ''
+## 각자의 드롭박스 key 입력
+#FORUS_AI_RESOURCES_APP_ACCESS_TOKEN =  ''
 
-logging.basicConfig(format='%(asctime)s,%(msecs)d %(levelname)-8s [%(filename)s:%(lineno)d] %(message)s',
-                    datefmt='%Y-%m-%d:%H:%M:%S',
-                    level=logging.WARNING)
-logger = logging.getLogger(__name__)
-dbx = dropbox.Dropbox(FORUS_AI_RESOURCES_APP_ACCESS_TOKEN)
+#logging.basicConfig(format='%(asctime)s,%(msecs)d %(levelname)-8s [%(filename)s:%(lineno)d] %(message)s',
+                    #datefmt='%Y-%m-%d:%H:%M:%S',
+                    #level=logging.WARNING)
+#logger = logging.getLogger(__name__)
+#dbx = dropbox.Dropbox(FORUS_AI_RESOURCES_APP_ACCESS_TOKEN)
 
 def auto_enter(text):
 	text = text.replace("   ", "\n")
