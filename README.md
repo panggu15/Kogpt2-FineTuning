@@ -11,16 +11,6 @@ SKT-AI에서 약 20GB의 한국어 데이터를 Pre-Training 시킨 [KoGPT2](htt
 또한 Colab에서는 원활한 학습을 위해서 Google Drive와 [Dropbbox](https://www.dropbox.com/h)을 연동했습니다. 학습한 중간 결과를 Google Drive에서 Dropbbox로 이동시킨 후, Google Drive에서 해당 결과를 삭제하게 합니다. 이와 관련된 [Code](https://github.com/gyunggyung/KoGPT2-FineTuning/blob/master/jupyter_main.py)
 
 
-## Sample
-![](img/outputs.JPG)  
-
-## Data structure
-|weight|Genre|lyrics|
-|---|---|---|
-|1100.0|발라드|'내 맘을 알잖아요\n\n\n바로처럼 멍하니 서 있는 모습만\n\n\n바라보다\n\n\n포기할 수 밖에 없어서...'|
-...
-##### 3x200000
-
 ## Fine Tuning
 ```
 python main.py --epoch=200 --data_file_path=./dataset/lyrics_dataset.csv --save_path=./checkpoint/ --load_path=./checkpoint/genre/KoGPT2_checkpoint_296000.tar --batch_size=1
